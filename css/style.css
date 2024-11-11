@@ -1,0 +1,203 @@
+:root {
+    --mainColor: #1C5550;
+    --iconBgColor: #00000033;
+    --articleButtonColor: #C3B97F;
+    --fontSize: font-size: 14px;
+    --navLinkFonts: 24px;
+
+
+
+
+}
+
+
+.container {
+
+    width: min(100%, 1440px);
+    margin: auto;
+    padding: 32px 20px;
+    background-color: var(--mainColor);
+    display: grid;
+    gap: 48px 40px;
+    grid-template-columns: 3.2fr 3.2fr 3.2fr 3.2fr;
+    grid-template-rows: 48px 170px 170px 220px;
+    grid-template-areas: "header header header header "
+        "aside section1 section1 section2"
+        "aside section1 section1 section3"
+        "article1 article2 article3 article4";
+
+
+
+}
+
+/* header */
+header {
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.headerNavList {
+    display: flex;
+    gap: 80px;
+}
+
+.headerNavLink {
+    font-size: var(--navLinkFonts);
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 32px;
+    color: #DFD9D9;
+
+}
+
+.headerSection {
+    display: flex;
+    gap: 32px;
+}
+
+.iconButton {
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+    box-shadow: 0px 2px 4px -2px #DFD9D966 inset;
+    box-shadow: 0px 2px 4px 0px #00000033;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--iconBgColor);
+    border: none;
+
+
+}
+
+aside {
+    background: #00000033;
+    box-shadow: 0px 4px 4px 0px #00000033 inset;
+    box-shadow: 0px -1px 4px 0px #DFD9D966 inset;
+    grid-area: aside;
+    padding: 38px 0 0 40px;
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+
+}
+
+.asideTitle {
+
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #C3B97F;
+
+
+
+}
+
+.asideLink {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #91B599;
+
+
+
+}
+
+
+.section1 {
+    background-color: aqua;
+    grid-area: section1;
+}
+
+.sectionImages {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.section2 {
+    background: #DFD9D9;
+    grid-area: section2;
+
+}
+
+.section3 {
+    background-color: #DFD9D9;
+    grid-area: section3;
+
+
+}
+
+/* article */
+
+.articleSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 8px;
+    background-color: #DFD9D9;
+}
+
+h4 {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: var(--mainColor)
+}
+
+.articleButton {
+    width: 97px;
+    height: 40px;
+    border: none;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 22px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #DFD9D9;
+    background-color: #C3B97F;
+
+
+
+}
+
+
+
+
+.articleImg {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+
+.article1 {
+    grid-area: article1;
+}
+
+.article2 {
+    grid-area: article2;
+}
+
+.article3 {
+    grid-area: article3;
+}
+
+.article4 {
+    grid-area: article4;
+}
